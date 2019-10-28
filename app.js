@@ -20,22 +20,22 @@ const postImgContentEl = document.createElement('p');
 postImgContentEl.textContent = postImg.content;
 postImgBodyEl.appendChild(postImgContentEl);
 
-const likesEl = document.createElement('button');
-likesEl.className = 'btn btn-success';
-likesEl.textContent = '❤' + postImg.likes;
-likesEl.onclick = function () {
+const imgLikesEl = document.createElement('button');
+imgLikesEl.className = 'btn btn-success';
+imgLikesEl.textContent = '❤' + postImg.likes;
+imgLikesEl.onclick = function () {
     postImg.likes = postImg.likes + 1;
-    likesEl.textContent = '❤' + postImg.likes;
+    imgLikesEl.textContent = '❤' + postImg.likes;
 };
-const dislikesEl = document.createElement('button');
-dislikesEl.className = 'btn btn-dark';
-dislikesEl.textContent = '👎' + postImg.dislikes;
-dislikesEl.onclick = function () {
+const imgDislikesEl = document.createElement('button');
+imgDislikesEl.className = 'btn btn-dark';
+imgDislikesEl.textContent = '👎' + postImg.dislikes;
+imgDislikesEl.onclick = function () {
     postImg.dislikes = postImg.dislikes + 1;
-    dislikesEl.textContent = '👎' + postImg.dislikes;
+    imgDislikesEl.textContent = '👎' + postImg.dislikes;
 };
-postImgBodyEl.appendChild(likesEl);
-postImgBodyEl.appendChild(dislikesEl);
+postImgBodyEl.appendChild(imgLikesEl);
+postImgBodyEl.appendChild(imgDislikesEl);
 
 const postVideo = {
     content: 'Видео на страничке',
@@ -58,22 +58,22 @@ const postVideoContentEl = document.createElement('p');
 postVideoContentEl.textContent = postVideo.content;
 postVideoBodyEl.appendChild(postVideoContentEl);
 
-const likesEl2 = document.createElement('button');
-likesEl2.className = 'btn btn-success';
-likesEl2.textContent = '❤' + postVideo.likes;
-likesEl2.onclick = function () {
+const videoLikesEl = document.createElement('button');
+videoLikesEl.className = 'btn btn-success';
+videoLikesEl.textContent = '❤' + postVideo.likes;
+videoLikesEl.onclick = function () {
     postVideo.likes = postVideo.likes + 1;
-    likesEl2.textContent = '❤' + postVideo.likes;
+    videoLikesEl.textContent = '❤' + postVideo.likes;
 };
-const dislikesEl2 = document.createElement('button');
-dislikesEl2.className = 'btn btn-dark';
-dislikesEl2.textContent = '👎' + postVideo.dislikes;
-dislikesEl2.onclick = function () {
+const videoDislikesEl = document.createElement('button');
+videoDislikesEl.className = 'btn btn-dark';
+videoDislikesEl.textContent = '👎' + postVideo.dislikes;
+videoDislikesEl.onclick = function () {
     postVideo.dislikes = postVideo.dislikes + 1;
-    dislikesEl2.textContent = '👎' + postVideo.dislikes;
+    videoDislikesEl.textContent = '👎' + postVideo.dislikes;
 };
-postVideoBodyEl.appendChild(likesEl2);
-postVideoBodyEl.appendChild(dislikesEl2);
+postVideoBodyEl.appendChild(videoLikesEl);
+postVideoBodyEl.appendChild(videoDislikesEl);
 
 const postAudio = {
     content: 'Аудио на страничке',
@@ -96,22 +96,22 @@ const postAudioContentEl = document.createElement('p');
 postAudioContentEl.textContent = postAudio.content;
 postAudioBodyEl.appendChild(postAudioContentEl);
 
-const likesEl3 = document.createElement('button');
-likesEl3.className = 'btn btn-success';
-likesEl3.textContent = '❤' + postAudio.likes;
-likesEl3.onclick = function () {
+const audioLikesEl = document.createElement('button');
+audioLikesEl.className = 'btn btn-success';
+audioLikesEl.textContent = '❤' + postAudio.likes;
+audioLikesEl.onclick = function () {
     postAudio.likes = postAudio.likes + 1;
-    likesEl3.textContent = '❤' + postAudio.likes;
+    audioLikesEl.textContent = '❤' + postAudio.likes;
 };
-const dislikesEl3 = document.createElement('button');
-dislikesEl3.className = 'btn btn-dark';
-dislikesEl3.textContent = '👎' + postAudio.dislikes;
-dislikesEl3.onclick = function () {
+const audioDislikesEl = document.createElement('button');
+audioDislikesEl.className = 'btn btn-dark';
+audioDislikesEl.textContent = '👎' + postAudio.dislikes;
+audioDislikesEl.onclick = function () {
     postAudio.dislikes = postAudio.dislikes + 1;
-    dislikesEl3.textContent = '👎' + postAudio.dislikes;
+    audioDislikesEl.textContent = '👎' + postAudio.dislikes;
 };
-postAudioBodyEl.appendChild(likesEl3);
-postAudioBodyEl.appendChild(dislikesEl3);
+postAudioBodyEl.appendChild(audioLikesEl);
+postAudioBodyEl.appendChild(audioDislikesEl);
 
 
 const postText = {
@@ -131,22 +131,22 @@ const postTextContentEl = document.createElement('p');
 postTextContentEl.textContent = postText.content;
 postTextBodyEl.appendChild(postTextContentEl);
 
-const likesEl4 = document.createElement('button');
-likesEl4.className = 'btn btn-success';
-likesEl4.textContent = '❤' + postText.likes;
-likesEl4.onclick = function () {
+const textLikesEl = document.createElement('button');
+textLikesEl.className = 'btn btn-success';
+textLikesEl.textContent = '❤' + postText.likes;
+textLikesEl.onclick = function () {
     postText.likes = postText.likes + 1;
-    likesEl4.textContent = '❤' + postText.likes;
+    textLikesEl.textContent = '❤' + postText.likes;
 };
-const dislikesEl4 = document.createElement('button');
-dislikesEl4.className = 'btn btn-dark';
-dislikesEl4.textContent = '👎' + postText.dislikes;
-dislikesEl4.onclick = function () {
+const textDislikesEl = document.createElement('button');
+textDislikesEl.className = 'btn btn-dark';
+textDislikesEl.textContent = '👎' + postText.dislikes;
+textDislikesEl.onclick = function () {
     postText.dislikes = postText.dislikes + 1;
-    dislikesEl4.textContent = '👎' + postText.dislikes;
+    textDislikesEl.textContent = '👎' + postText.dislikes;
 };
-postTextBodyEl.appendChild(likesEl4);
-postTextBodyEl.appendChild(dislikesEl4);
+postTextBodyEl.appendChild(textLikesEl);
+postTextBodyEl.appendChild(textDislikesEl);
 
 
 const links = [];
