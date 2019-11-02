@@ -151,16 +151,18 @@ postTextBodyEl.appendChild(textDislikesEl);
 
 const links = [];
 const addFormEl = document.createElement('form');
-
+addFormEl.className = 'form-inline mb-2';
 addFormEl.innerHTML = `
-    <input data-id="link">
-    <select data-id="type">
-        <option value="text">Текст</option>
+    <div class="form-group">
+        <input class="form-control" data-id="link">
+    </div>
+    <select class="custom-select data-id="type">
+        <option value="regular">Обычный</option>
         <option value="image">Изображение</option>
         <option value="audio">Аудио</option>
         <option value="video">Видео</option>
     </select>
-    <button>Ok</button>
+    <button class="btn btn-primary">Ok</button>
 `;
 addFormEl.onsubmit = function (ev) {
     ev.preventDefault();
