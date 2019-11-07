@@ -36,8 +36,6 @@ rootEl.appendChild(addFormEl);
 const postsEl = document.createElement('div');
 rootEl.appendChild(postsEl);
 
-const controls = document.createElement('controls');
-
 function rebuildList(containerEl, items) {
     containerEl.innerHTML = '';
     for (const item of items) {
